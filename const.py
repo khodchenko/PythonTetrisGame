@@ -1,10 +1,12 @@
-WIDTH, HEIGHT = 100, 750
+WIDTH, HEIGHT = 10, 20
 TILE = 35
-GAME_RES = WIDTH * HEIGHT
+GAME_RES = WIDTH * TILE, HEIGHT * TILE
 RES = 750, 750
 FPS = 60
 
-FIGURES_POSITION = [
+MAIN_MUSIC_PATH = 'music/Tetris_theme.ogg'
+
+FIGURES_POSITIONS = [
     [(-2, -1), (-1, -1), (0, -1), (1, -1)],
     [(0, -1), (-1, -1), (-1, 0), (0, 0)],
     [(-1, -1), (0, 0), (-1, 0), (0, 1)],
@@ -14,8 +16,10 @@ FIGURES_POSITION = [
     [(0, 0), (0, -1), (0, 1), (-1, 0)],
 ]
 
-ANIM_COUNT, ANIM_SPEED, ANIM_LIMIT = 0, 60, 2000
-
-
-score, lines = 0, 0
-SCORES = {0: 0, 1: 100, 2: 300, 3: 700, 4: 1500}
+SCORES = {
+    0: 0,
+    1: 100,
+    2: 300,
+    3: 900,
+    4: 2000
+}
